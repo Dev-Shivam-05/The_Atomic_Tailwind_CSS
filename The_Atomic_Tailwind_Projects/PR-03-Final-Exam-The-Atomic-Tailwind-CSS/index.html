@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John Bravo's Blog - Exam Correction</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./src/css/main.css" />
+  </head>
+
+  <body class="bg-gray-900 text-white">
+    <header
+      class="py-4 border-b border-gray-600 sticky top-0 z-50 bg-gray-900/95 backdrop-blur"
+    >
+      <div class="container mx-auto px-4">
+        <nav class="nav flex justify-between items-center lg:hidden">
+          <img src="./assets/logo-light.png" alt="logo-light" class="w-32" />
+          <div class="flex items-center space-x-4">
+            <i class="fa-solid fa-sun text-white text-xl"></i>
+            <button
+              type="button"
+              class="h-10 w-10 rounded-full bg-green text-white flex justify-center items-center"
+            >
+              <i class="fa-solid fa-magnifying-glass text-sm"></i>
+            </button>
+            <button
+              type="button"
+              id="toggle"
+              class="h-10 w-10 rounded-full bg-green text-white flex justify-center items-center"
+            >
+              <i class="fa-solid fa-bars text-sm"></i>
+            </button>
+          </div>
+        </nav>
+
+        <div
+          id="mobile-menu"
+          class="hidden lg:hidden flex-col space-y-4 mt-4 pb-4 border-b border-gray-700"
+        >
+          <a
+            href="https://github.com/Dev-Shivam-05"
+            target="_blank"
+            class="block hover:text-green font-bold"
+            >Home</a
+          >
+          <a
+            href="https://github.com/Dev-Shivam-05"
+            target="_blank"
+            class="block hover:text-green font-bold"
+            >About</a
+          >
+          <a
+            href="https://github.com/Dev-Shivam-05"
+            target="_blank"
+            class="block hover:text-green font-bold"
+            >Elements</a
+          >
+          <a
+            href="https://github.com/Dev-Shivam-05"
+            target="_blank"
+            class="block hover:text-green font-bold"
+            >Contact</a
+          >
+          <a
+            href="https://github.com/Dev-Shivam-05"
+            target="_blank"
+            class="block hover:text-green font-bold"
+            >Pages</a
+          >
+        </div>
+
+        <nav class="hidden desktop-nav lg:flex justify-between items-center">
+          <img src="./assets/logo-light.png" alt="logo-light" class="w-48" />
+          <ul
+            class="text-white font-bold ms-4 tracking-tighter flex justify-center items-center space-x-2"
+          >
+            <li class="transitions p-3 bg-green rounded-full">
+              <a
+                href="https://github.com/Dev-Shivam-05"
+                target="_blank"
+                class=""
+                >Home</a
+              >
+            </li>
+            <li class="transitions p-3 hover:bg-green rounded-full">
+              <a
+                href="https://github.com/Dev-Shivam-05"
+                target="_blank"
+                class=""
+                >About</a
+              >
+            </li>
+            <li class="transitions p-3 hover:bg-green rounded-full">
+              <a
+                href="https://github.com/Dev-Shivam-05"
+                target="_blank"
+                class=""
+                >Elements</a
+              >
+            </li>
+            <li class="transitions p-3 hover:bg-green rounded-full">
+              <a
+                href="https://github.com/Dev-Shivam-05"
+                target="_blank"
+                class=""
+                >Contact</a
+              >
+            </li>
+
+            <li
+              class="group relative transitions p-3 hover:bg-green rounded-full"
+            >
+              <a
+                href="https://github.com/Dev-Shivam-05"
+                target="_blank"
+                class="flex items-center"
+              >
+                Pages <i class="fa-solid fa-angle-down ms-1"></i>
+              </a>
+              <ul
+                class="dropdown absolute top-full left-0 mt-2 p-3 bg-gray-800 rounded border border-gray-600 opacity-0 invisible group-hover:opacity-100 group-hover:visible transitions w-40 z-20"
+              >
+                <li
+                  class="text-white/90 font-bold text-lg p-2 hover:bg-gray-700 transitions rounded"
+                >
+                  <a
+                    href="https://github.com/Dev-Shivam-05"
+                    target="_blank"
+                    class=""
+                    >Categories</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="mx-2 text-gray-500">|</li>
+
+            <li class="hover:text-green transitions p-2">
+              <a href="https://github.com/Dev-Shivam-05" target="_blank"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+            </li>
+            <li class="hover:text-green transitions p-2">
+              <a href="https://github.com/Dev-Shivam-05" target="_blank"
+                ><i class="fa-brands fa-stack-overflow"></i
+              ></a>
+            </li>
+            <li class="hover:text-green transitions p-2">
+              <a href="https://github.com/Dev-Shivam-05" target="_blank"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </li>
+            <li class="hover:text-green transitions p-2">
+              <a href="https://github.com/Dev-Shivam-05" target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+            <li class="hover:text-green transitions p-2">
+              <a href="https://github.com/Dev-Shivam-05" target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </li>
+            <li class="hover:text-green transitions p-2">
+              <a href="https://github.com/Dev-Shivam-05" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </li>
+
+            <li class="mx-2 text-gray-500">|</li>
+            <li>
+              <i
+                class="fa-solid fa-sun text-white cursor-pointer hover:text-green"
+              ></i>
+            </li>
+            <li>
+              <button
+                type="button"
+                class="h-8 w-8 rounded-full bg-green text-white flex justify-center items-center ms-3"
+              >
+                <i class="fa-solid fa-magnifying-glass text-sm"></i>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="space-y-16 mt-8">
+      <section class="hero">
+        <div class="container mx-auto px-4">
+          <div
+            class="flex flex-col lg:flex-row items-center justify-between gap-10"
+          >
+            Your code had image lg:order-2, so Image is Right on Desktop. -->
+            <div class="w-full lg:w-1/2 lg:order-2">
+              <img
+                src="./assets/hero-image-1.png"
+                alt="hero-image-1"
+                class="block w-full rounded-lg shadow-lg"
+              />
+            </div>
+            <div class="w-full lg:w-1/2 lg:order-1 text-center lg:text-left">
+              <h1
+                class="text-white text-base font-semibold leading-7 lg:text-5xl lg:leading-tight"
+              >
+                <span class="text-4xl font-bold lg:text-7xl">
+                  Welcome <span class="text-green">!</span>
+                </span>
+                <br />
+                to John Bravo's Blog
+              </h1>
+              <p
+                class="text-white/70 text-lg my-6 lg:text-xl lg:my-10 leading-relaxed"
+              >
+                Are Developer and recently started your own business Already
+                made website to ensure presence wants to develop.
+              </p>
+              <a
+                href="https://github.com/Dev-Shivam-05"
+                target="_blank"
+                class="btn"
+                >Know About Me</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="featured-posts">
+        <div class="container mx-auto px-4">
+          <div class="features-heading mb-8 text-center lg:text-left">
+            <h2 class="section-title text-3xl font-bold decoration-wavy">
+              Featured Posts
+            </h2>
+          </div>
+
+          <div class="flex flex-col lg:flex-row gap-6">
+            <div
+              class="w-full lg:w-7/12 p-6 border border-gray-600 rounded-lg bg-gray-800/50"
+            >
+              <div class="image relative mb-6">
+                <img
+                  src="./assets/featured-post-image-1.png"
+                  alt="featured-post"
+                  class="w-full rounded-md object-cover"
+                />
+                <span
+                  class="inline-block font-bold py-1 px-4 bg-green rounded-full text-sm absolute top-4 left-4 text-white"
+                  >Github</span
+                >
+              </div>
+              <h3
+                class="text-2xl font-bold my-3 hover:text-green transitions cursor-pointer"
+              >
+                What is a Virtual Assistant
+              </h3>
+              <ul class="flex space-x-5 text-sm text-gray-400 mb-4">
+                <li>
+                  <a
+                    href="https://github.com/Dev-Shivam-05"
+                    target="_blank"
+                    class="hover:text-white"
+                    ><i class="fa-solid fa-user me-2 text-green"></i
+                    >Statichunt</a
+                  >
+                </li>
+                <li><i class="fa-regular fa-calendar me-2"></i>04 Apr 2022</li>
+              </ul>
+              <p class="my-3 text-white/60 text-lg mb-6 line-clamp-3">
+                Nemo vel ad consectetur namut rutrum ex, venenatis sollicitudin
+                urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum
+                lacus...
+              </p>
+              <a
+                href="https://github.com/Dev-Shivam-05"
+                target="_blank"
+                class="btn"
+                >Read More</a
+              >
+            </div>
+
+            <div
+              class="w-full lg:w-5/12 h-150 overflow-y-auto custom-scroll border border-gray-600 rounded-lg p-4 bg-gray-800/50"
+            >
+              <div class="flex flex-col space-y-6">
+                <div class="flex gap-4 pb-5 border-b border-gray-600">
+                  <img
+                    src="./assets/featured-post-mobile-image-1.png"
+                    alt="thumb"
+                    class="w-24 h-24 rounded-lg object-cover shrink-0"
+                  />
+                  <div>
+                    <h4
+                      class="text-lg font-bold hover:text-green transitions cursor-pointer"
+                    >
+                      Drone Software and Development
+                    </h4>
+                    <div class="mt-2 text-gray-400 text-sm font-bold">
+                      <i class="fa-regular fa-calendar me-1"></i> 04 Apr 2022
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex gap-4 pb-5 border-b border-gray-600">
+                  <img
+                    src="./assets/featured-post-mobile-image-2.png"
+                    alt="thumb"
+                    class="w-24 h-24 rounded-lg object-cover shrink-0"
+                  />
+                  <div>
+                    <h4
+                      class="text-lg font-bold hover:text-green transitions cursor-pointer"
+                    >
+                      How to make toys from old Olarpaper
+                    </h4>
+                    <div class="mt-2 text-gray-400 text-sm font-bold">
+                      <i class="fa-regular fa-calendar me-1"></i> 04 Apr 2022
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex gap-4 pb-5 border-b border-gray-600">
+                  <img
+                    src="./assets/featured-post-mobile-image-3.png"
+                    alt="thumb"
+                    class="w-24 h-24 rounded-lg object-cover shrink-0"
+                  />
+                  <div>
+                    <h4
+                      class="text-lg font-bold hover:text-green transitions cursor-pointer"
+                    >
+                      How to make toys from old Olarpaper
+                    </h4>
+                    <div class="mt-2 text-gray-400 text-sm font-bold">
+                      <i class="fa-regular fa-calendar me-1"></i> 04 Apr 2022
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex gap-4 pb-5 border-b border-gray-600">
+                  <img
+                    src="./assets/featured-post-mobile-image-4.png"
+                    alt="thumb"
+                    class="w-24 h-24 rounded-lg object-cover shrink-0"
+                  />
+                  <div>
+                    <h4
+                      class="text-lg font-bold hover:text-green transitions cursor-pointer"
+                    >
+                      How to make toys from old Olarpaper
+                    </h4>
+                    <div class="mt-2 text-gray-400 text-sm font-bold">
+                      <i class="fa-regular fa-calendar me-1"></i> 04 Apr 2022
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex gap-4">
+                  <img
+                    src="./assets/featured-post-mobile-image-5.png"
+                    alt="thumb"
+                    class="w-24 h-24 rounded-lg object-cover shrink-0"
+                  />
+                  <div>
+                    <h4
+                      class="text-lg font-bold hover:text-green transitions cursor-pointer"
+                    >
+                      What you need to know about Photography
+                    </h4>
+                    <div class="mt-2 text-gray-400 text-sm font-bold">
+                      <i class="fa-regular fa-calendar me-1"></i> 01 Apr 2022
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <img
+            src="./assets/featured-post-mobile-image-6.png"
+            alt="banner"
+            class="w-full my-8 lg:w-9/12 mx-auto rounded-lg shadow-lg"
+          />
+        </div>
+      </section>
+
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col lg:flex-row gap-8">
+          <section class="recent-posts w-full lg:w-9/12">
+            <div class="recent-heading mb-8 text-center lg:text-left">
+              <h2 class="section-title text-3xl font-bold decoration-wavy">
+                Recent Posts
+              </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div
+                class="border border-gray-600 rounded-lg p-5 bg-gray-800/30 hover:bg-gray-800 transitions group"
+              >
+                <div class="relative">
+                  <img
+                    src="./assets/recent-post-image-01.png"
+                    alt="post1"
+                    class="w-full rounded-md"
+                  />
+                  <span
+                    class="absolute top-3 left-3 bg-green text-xs font-bold px-3 py-1 rounded-full"
+                    >Robotics</span
+                  >
+                  <span
+                    class="absolute top-3 right-3 bg-green text-xs font-bold px-3 py-1 rounded-full"
+                    >Assistance</span
+                  >
+                </div>
+                <h3
+                  class="text-xl font-bold my-4 group-hover:text-green transitions"
+                >
+                  How to make toys from old Olarpaper
+                </h3>
+                <ul class="flex space-x-4 text-sm text-gray-400 mb-4">
+                  <li>
+                    <i class="fa-solid fa-user text-green me-1"></i> Statichunt
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-calendar me-1"></i> 04 Apr 2022
+                  </li>
+                </ul>
+                <p class="text-gray-400 mb-6 line-clamp-3">
+                  Nemo vel ad consectetur namut rutrum ex, venenatis
+                  sollicitudin urna. Aliquam erat volutpat.
+                </p>
+                <a
+                  href="https://github.com/Dev-Shivam-05"
+                  target="_blank"
+                  class="btn text-sm px-6 py-2"
+                  >Read More</a
+                >
+              </div>
+
+              <div
+                class="border border-gray-600 rounded-lg p-5 bg-gray-800/30 hover:bg-gray-800 transitions group"
+              >
+                <div class="relative">
+                  <img
+                    src="./assets/recent-post-image-02.png"
+                    alt="post2"
+                    class="w-full rounded-md"
+                  />
+                  <span
+                    class="absolute top-3 left-3 bg-green text-xs font-bold px-3 py-1 rounded-full"
+                    >Robotics</span
+                  >
+                  <span
+                    class="absolute top-3 right-3 bg-green text-xs font-bold px-3 py-1 rounded-full"
+                    >Youtube</span
+                  >
+                </div>
+                <h3
+                  class="text-xl font-bold my-4 group-hover:text-green transitions"
+                >
+                  What you need to know about Programming
+                </h3>
+                <ul class="flex space-x-4 text-sm text-gray-400 mb-4">
+                  <li>
+                    <i class="fa-solid fa-user text-green me-1"></i> Statichunt
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-calendar me-1"></i> 04 Apr 2022
+                  </li>
+                </ul>
+                <p class="text-gray-400 mb-6 line-clamp-3">
+                  Nemo vel ad consectetur namut rutrum ex, venenatis
+                  sollicitudin urna. Aliquam erat volutpat.
+                </p>
+                <a
+                  href="https://github.com/Dev-Shivam-05"
+                  target="_blank"
+                  class="btn text-sm px-6 py-2"
+                  >Read More</a
+                >
+              </div>
+
+              <div
+                class="border border-gray-600 rounded-lg p-5 bg-gray-800/30 hover:bg-gray-800 transitions group"
+              >
+                <div class="relative">
+                  <img
+                    src="./assets/recent-post-image-03.png"
+                    alt="post3"
+                    class="w-full rounded-md"
+                  />
+                  <span
+                    class="absolute top-3 left-3 bg-green text-xs font-bold px-3 py-1 rounded-full"
+                    >AI</span
+                  >
+                  <span
+                    class="absolute top-3 right-3 bg-green text-xs font-bold px-3 py-1 rounded-full"
+                    >Youtube</span
+                  >
+                </div>
+                <h3
+                  class="text-xl font-bold my-4 group-hover:text-green transitions"
+                >
+                  What you need to learn PHP
+                </h3>
+                <ul class="flex space-x-4 text-sm text-gray-400 mb-4">
+                  <li>
+                    <i class="fa-solid fa-user text-green me-1"></i> Statichunt
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-calendar me-1"></i> 04 Apr 2022
+                  </li>
+                </ul>
+                <p class="text-gray-400 mb-6 line-clamp-3">
+                  Nemo vel ad consectetur namut rutrum ex, venenatis
+                  sollicitudin urna. Aliquam erat volutpat.
+                </p>
+                <a
+                  href="https://github.com/Dev-Shivam-05"
+                  target="_blank"
+                  class="btn text-sm px-6 py-2"
+                  >Read More</a
+                >
+              </div>
+
+              <div
+                class="border border-gray-600 rounded-lg p-5 bg-gray-800/30 hover:bg-gray-800 transitions group"
+              >
+                <div class="relative">
+                  <img
+                    src="./assets/recent-post-image-04.png"
+                    alt="post4"
+                    class="w-full rounded-md"
+                  />
+                  <span
+                    class="absolute top-3 left-3 bg-green text-xs font-bold px-3 py-1 rounded-full"
+                    >Github</span
+                  >
+                </div>
+                <h3
+                  class="text-xl font-bold my-4 group-hover:text-green transitions"
+                >
+                  What is a Virtual Assistant
+                </h3>
+                <ul class="flex space-x-4 text-sm text-gray-400 mb-4">
+                  <li>
+                    <i class="fa-solid fa-user text-green me-1"></i> Statichunt
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-calendar me-1"></i> 04 Apr 2022
+                  </li>
+                </ul>
+                <p class="text-gray-400 mb-6 line-clamp-3">
+                  Nemo vel ad consectetur namut rutrum ex, venenatis
+                  sollicitudin urna. Aliquam erat volutpat.
+                </p>
+                <a
+                  href="https://github.com/Dev-Shivam-05"
+                  target="_blank"
+                  class="btn text-sm px-6 py-2"
+                  >Read More</a
+                >
+              </div>
+
+              <div
+                class="border border-gray-600 rounded-lg p-5 bg-gray-800/30 hover:bg-gray-800 transitions group"
+              >
+                <div class="relative">
+                  <img
+                    src="./assets/recent-post-image-05.png"
+                    alt="post5"
+                    class="w-full rounded-md"
+                  />
+                  <span
+                    class="absolute top-3 left-3 bg-green text-xs font-bold px-3 py-1 rounded-full"
+                    >Assistant</span
+                  >
+                </div>
+                <h3
+                  class="text-xl font-bold my-4 group-hover:text-green transitions"
+                >
+                  Robotic world is growing very fast
+                </h3>
+                <ul class="flex space-x-4 text-sm text-gray-400 mb-4">
+                  <li>
+                    <i class="fa-solid fa-user text-green me-1"></i> Statichunt
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-calendar me-1"></i> 04 Apr 2022
+                  </li>
+                </ul>
+                <p class="text-gray-400 mb-6 line-clamp-3">
+                  Nemo vel ad consectetur namut rutrum ex, venenatis
+                  sollicitudin urna. Aliquam erat volutpat.
+                </p>
+                <a
+                  href="https://github.com/Dev-Shivam-05"
+                  target="_blank"
+                  class="btn text-sm px-6 py-2"
+                  >Read More</a
+                >
+              </div>
+
+              <div
+                class="border border-gray-600 rounded-lg p-5 bg-gray-800/30 hover:bg-gray-800 transitions group"
+              >
+                <div class="relative">
+                  <img
+                    src="./assets/recent-post-image-06.png"
+                    alt="post6"
+                    class="w-full rounded-md"
+                  />
+                  <span
+                    class="absolute top-3 left-3 bg-green text-xs font-bold px-3 py-1 rounded-full"
+                    >Programming</span
+                  >
+                </div>
+                <h3
+                  class="text-xl font-bold my-4 group-hover:text-green transitions"
+                >
+                  My work from home workstation
+                </h3>
+                <ul class="flex space-x-4 text-sm text-gray-400 mb-4">
+                  <li>
+                    <i class="fa-solid fa-user text-green me-1"></i> Statichunt
+                  </li>
+                  <li>
+                    <i class="fa-regular fa-calendar me-1"></i> 04 Apr 2022
+                  </li>
+                </ul>
+                <p class="text-gray-400 mb-6 line-clamp-3">
+                  Nemo vel ad consectetur namut rutrum ex, venenatis
+                  sollicitudin urna. Aliquam erat volutpat.
+                </p>
+                <a
+                  href="https://github.com/Dev-Shivam-05"
+                  target="_blank"
+                  class="btn text-sm px-6 py-2"
+                  >Read More</a
+                >
+              </div>
+            </div>
+
+            <div
+              class="navigate-area flex items-center justify-center text-white/90 space-x-4 mt-10"
+            >
+              <button
+                class="flex items-center space-x-2 hover:text-green transitions"
+              >
+                <i class="fa-solid fa-arrow-left"></i>
+                <span class="font-bold">Previous</span>
+              </button>
+              <div class="numbers flex space-x-2">
+                <span
+                  class="w-10 h-10 rounded-full flex justify-center items-center bg-green font-bold"
+                  >1</span
+                >
+                <span
+                  class="w-10 h-10 rounded-full flex justify-center items-center bg-gray-700 hover:bg-green transitions cursor-pointer"
+                  >2</span
+                >
+                <span
+                  class="w-10 h-10 rounded-full flex justify-center items-center bg-gray-700 hover:bg-green transitions cursor-pointer"
+                  >3</span
+                >
+              </div>
+              <button
+                class="flex items-center space-x-2 hover:text-green transitions"
+              >
+                <span class="font-bold">Next</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </section>
+
+          <aside class="w-full lg:w-3/12 space-y-8">
+            <div
+              class="p-6 border border-gray-800 bg-gray-800/20 rounded-lg text-center"
+            >
+              <div class="flex flex-col justify-center items-center mb-4">
+                <img
+                  src="./assets/map.svg"
+                  alt="map"
+                  class="w-full rounded-md opacity-80"
+                />
+                <img
+                  src="./assets/logo-light.png"
+                  alt="logo"
+                  class="w-32 mt-[-20px] bg-gray-900/80 p-1 rounded"
+                />
+              </div>
+              <p class="text-white/60 text-sm mb-6">
+                Lorem ipsum dolor sit amet, conse tfctetur adipiscing elit. Vel
+                in in donec iaculis tempasus.
+              </p>
+              <ul class="flex text-white/60 justify-center space-x-3 text-lg">
+                <li>
+                  <a
+                    href="https://github.com/Dev-Shivam-05"
+                    target="_blank"
+                    class="hover:text-green"
+                    ><i class="fa-brands fa-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/Dev-Shivam-05"
+                    target="_blank"
+                    class="hover:text-green"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/Dev-Shivam-05"
+                    target="_blank"
+                    class="hover:text-green"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/Dev-Shivam-05"
+                    target="_blank"
+                    class="hover:text-green"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="p-6 border border-gray-800 bg-gray-800/20 rounded-lg">
+              <div class="text-center mb-6">
+                <h4
+                  class="section-title text-xl font-bold decoration-wavy inline-block mb-4"
+                >
+                  Featured
+                </h4>
+                <div class="flex justify-center space-x-2">
+                  <span
+                    class="text-green font-bold border-b-2 border-green pb-1 cursor-pointer"
+                    >Featured</span
+                  >
+                  <span
+                    class="text-gray-500 font-bold pb-1 hover:text-white cursor-pointer"
+                    >Recent</span
+                  >
+                </div>
+              </div>
+
+              <div
+                class="flex items-center gap-3 pb-4 border-b border-gray-700 mb-4"
+              >
+                <img
+                  src="./assets/recent-post-image-01.png"
+                  alt="mini"
+                  class="h-16 w-16 rounded-full object-cover"
+                />
+                <div>
+                  <h5 class="text-sm font-bold hover:text-green cursor-pointer">
+                    How to make toys from old Olarpaper
+                  </h5>
+                  <div class="text-xs text-gray-500 mt-1">
+                    <i class="fa-regular fa-calendar"></i> 04 Apr 2022
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="flex items-center gap-3 pb-4 border-b border-gray-700 mb-4"
+              >
+                <img
+                  src="./assets/recent-post-image-02.png"
+                  alt="mini"
+                  class="h-16 w-16 rounded-full object-cover"
+                />
+                <div>
+                  <h5 class="text-sm font-bold hover:text-green cursor-pointer">
+                    What you need to know about Programming
+                  </h5>
+                  <div class="text-xs text-gray-500 mt-1">
+                    <i class="fa-regular fa-calendar"></i> 04 Apr 2022
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-3">
+                <img
+                  src="./assets/recent-post-image-03.png"
+                  alt="mini"
+                  class="h-16 w-16 rounded-full object-cover"
+                />
+                <div>
+                  <h5 class="text-sm font-bold hover:text-green cursor-pointer">
+                    What you need to learn PHP
+                  </h5>
+                  <div class="text-xs text-gray-500 mt-1">
+                    <i class="fa-regular fa-calendar"></i> 04 Apr 2022
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="p-6 border border-gray-800 bg-gray-800/20 rounded-lg text-center"
+            >
+              <h4
+                class="section-title text-xl font-bold decoration-wavy inline-block mb-6"
+              >
+                Newsletter
+              </h4>
+              <input
+                type="email"
+                class="w-full p-3 bg-gray-700 rounded-full text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green mb-4"
+                placeholder="Type And Hit Enter"
+              />
+              <button class="btn w-full">Sign In</button>
+              <p class="text-xs text-gray-500 mt-4">
+                By Signing Up, You Agree To
+                <span class="text-green cursor-pointer">Privacy Policy</span>
+              </p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </main>
+
+    <footer class="mt-20 border-t border-gray-800 bg-black/20 py-10">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col justify-center items-center text-center">
+          <img
+            src="./assets/logo-light.png"
+            alt="footer-logo"
+            class="w-36 mb-6"
+          />
+          <p class="text-white/60 max-w-md mb-6">
+            Lorem ipsum dolor sit amt, conse adip iscing. donec iaculis tempasus
+            laoreet. Libero ullam rgscper.
+          </p>
+          <ul
+            class="flex flex-wrap justify-center gap-6 font-bold text-sm mb-8"
+          >
+            <li>
+              <a
+                href="https://github.com/Dev-Shivam-05"
+                target="_blank"
+                class="hover:text-green"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/Dev-Shivam-05"
+                target="_blank"
+                class="hover:text-green"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/Dev-Shivam-05"
+                target="_blank"
+                class="hover:text-green"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/Dev-Shivam-05"
+                target="_blank"
+                class="hover:text-green"
+                >Privacy Policy</a
+              >
+            </li>
+          </ul>
+          <ul
+            class="flex justify-center gap-6 mb-8 px-8 py-2 border-x border-green/30 text-white/60"
+          >
+            <li>
+              <a
+                href="https://github.com/Dev-Shivam-05"
+                target="_blank"
+                class="hover:text-green"
+                ><i class="fa-brands fa-facebook text-xl"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/Dev-Shivam-05"
+                target="_blank"
+                class="hover:text-green"
+                ><i class="fa-brands fa-stack-overflow text-xl"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/Dev-Shivam-05"
+                target="_blank"
+                class="hover:text-green"
+                ><i class="fa-brands fa-twitter text-xl"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/Dev-Shivam-05"
+                target="_blank"
+                class="hover:text-green"
+                ><i class="fa-brands fa-instagram text-xl"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/Dev-Shivam-05"
+                target="_blank"
+                class="hover:text-green"
+                ><i class="fa-brands fa-linkedin text-xl"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/Dev-Shivam-05"
+                target="_blank"
+                class="hover:text-green"
+                ><i class="fa-brands fa-github text-xl"></i
+              ></a>
+            </li>
+          </ul>
+          <p class="text-white/50 text-sm">
+            Designed and Developed By
+            <a
+              href="https://github.com/Dev-Shivam-05"
+              target="_blank"
+              class="text-green"
+              >Shivam</a
+            >
+            | Distributed by ThemeWagon
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+.desktop-nav {
+  @apply justify-between items-center;
+}
+
+.section-title {
+  @apply text-3xl text-white font-bold underline decoration-2 decoration-green underline-offset-8 mb-10;
+}
+
+.btn {
+  @apply py-3 px-8 bg-green text-white/90 font-bold rounded-full text-lg;
+}
+
+.transitions {
+    @apply transition-all duration-100 ease-in-out;
+}
+
+@theme {
+  /* Colors */
+  --color-green: #2ba283;
+
+  /* fonts */
+  --font-merriweather: "Merriweather", serif;
+  --font-raleway: "Raleway", serif;
+
+}
