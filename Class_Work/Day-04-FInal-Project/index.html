@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fonts cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icons cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="./src/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header Starts -->
+    <header class="py-3 text-white fixed top-0 start-0 end-0 z-50">
+      <nav class="nav">
+        <div class="container mx-auto px-4">
+          <div class="flex justify-between items-center">
+            <a href="" class="nav-brand font-bold text-3xl font-ubuntu"
+              >Aventro</a
+            >
+            <ul class="flex justify-between text-white/70 font-inter">
+              <li class="py-3.5 px-4 mx-0.5 group relative">
+                <a
+                  href=""
+                  class="capitalize text-sm px-0.5 active:text-black text-white"
+                  >home</a
+                >
+                <span
+                  class="bg-[#217FBC] w-full h-0.5 start-0 duration-500 absolute top-full group-hover:w-0"
+                ></span>
+              </li>
+              <li class="py-3.5 px-4 mx-0.5 group relative">
+                <a href="" class="capitalize text-sm px-0.5"> about </a>
+                <span
+                  class="bg-[#217FBC] w-0 h-0.5 start-0 duration-500 absolute top-full group-hover:w-full"
+                ></span>
+              </li>
+              <li class="py-3.5 px-4 mx-0.5 group relative">
+                <a href="" class="capitalize text-sm px-0.5"> services </a>
+                <span
+                  class="bg-[#217FBC] w-0 h-0.5 start-0 duration-500 absolute top-full group-hover:w-full"
+                ></span>
+              </li>
+              <li class="py-3.5 px-4 mx-0.5 group relative">
+                <a href="" class="capitalize text-sm px-0.5"> pricing </a>
+                <span
+                  class="bg-sky w-0 h-0.5 start-0 duration-500 absolute top-full group-hover:w-full"
+                ></span>
+              </li>
+              <li class="py-3.5 px-4 mx-0.5 group relative">
+                <a href="" class="capitalize text-sm px-0.5"> team </a>
+                <span
+                  class="bg-[#217FBC] w-0 h-0.5 start-0 duration-500 absolute top-full group-hover:w-full"
+                ></span>
+              </li>
+              <li class="py-3.5 px-4 mx-0.5 group relative">
+                <a href="" class="capitalize text-sm px-0.5"> dropdown </a>
+                <i class="fa-solid fa-chevron-down text-white/70 text-xs"></i>
+                <span
+                  class="bg-sky w-0 h-0.5 start-0 duration-500 absolute top-full group-hover:w-full"
+                ></span>
+
+                <!-- Dropdown Starts -->
+                <ul
+                  class="dropdown w-50 absolute top-full start-0 bg-dark opacity-0 invisible text-white/70 font-inter group-hover:opacity-100 group-hover:visible transition-all ease-in-out duration-500 rounded border-4 border-gray-500"
+                >
+                  <li class="py-2.5 px-5 mx-0.5 group relative">
+                    <a
+                      href=""
+                      class="capitalize text-sm px-0.5 active:text-black text-white hover:text-sky duration-500 transition-all ease-in-out"
+                      >dropdown 1</a
+                    >
+                  </li>
+                  <!-- Deep Dropdown Starts -->
+                  <li
+                    class="deep-dropdown py-2.5 px-5 mx-0.5 group/sub relative"
+                  >
+                    <a
+                      href=""
+                      class="capitalize text-sm px-0.5 active:text-black text-white hover:text-sky"
+                      >deep dropdown</a
+                    >
+                    <i class="fa-solid fa-chevron-down text-white/70"></i>
+                    <ul
+                      class="deep-dropdown absolute w-50 top-1 end-full bg-dark opacity-0 invisible text-white/70 font-inter group-hover/sub:opacity-100 group-hover/sub:visible transition-all ease-in-out duration-500 rounded border-4 border-gray-500"
+                    >
+                      <li class="py-3 px-5 mx-0.5 group relative">
+                        <a
+                          href=""
+                          class="capitalize text-sm active:text-black text-white hover:text-sky duration-500 transition-all ease-in-out"
+                          >deep dropdown 1</a
+                        >
+                      </li>
+                      <li class="py-3 px-5 mx-0.5 group relative">
+                        <a
+                          href=""
+                          class="capitalize text-sm active:text-black text-white hover:text-sky duration-500 transition-all ease-in-out"
+                          >deep dropdown 2</a
+                        >
+                      </li>
+                      <li class="py-3 px-5 mx-0.5 group relative">
+                        <a
+                          href=""
+                          class="capitalize text-sm active:text-black text-white hover:text-sky duration-500 transition-all ease-in-out"
+                          >deep dropdown 3</a
+                        >
+                      </li>
+                      <li class="py-3 px-5 mx-0.5 group relative">
+                        <a
+                          href=""
+                          class="capitalize text-sm active:text-black text-white hover:text-sky duration-500 transition-all ease-in-out"
+                          >deep dropdown 4</a
+                        >
+                      </li>
+                      <li class="py-3 px-5 mx-0.5 group relative">
+                        <a
+                          href=""
+                          class="capitalize text-sm active:text-black text-white hover:text-sky duration-500 transition-all ease-in-out"
+                          >deep dropdown 5</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <!-- Deep Dropdown End -->
+
+                  <li class="py-2.5 px-5 mx-0.5 group relative">
+                    <a
+                      href=""
+                      class="capitalize text-sm px-0.5 active:text-black text-white hover:text-sky duration-500 transition-all ease-in-out"
+                      >dropdown 2</a
+                    >
+                  </li>
+                  <li class="py-2.5 px-5 mx-0.5 group relative">
+                    <a
+                      href=""
+                      class="capitalize text-sm px-0.5 active:text-black text-white hover:text-sky duration-500 transition-all ease-in-out"
+                      >dropdown 3</a
+                    >
+                  </li>
+                  <li class="py-2.5 px-5 mx-0.5 group relative">
+                    <a
+                      href=""
+                      class="capitalize text-sm px-0.5 active:text-black text-white hover:text-sky duration-500 transition-all ease-in-out"
+                      >dropdown 4</a
+                    >
+                  </li>
+                  <li class="py-2.5 px-5 mx-0.5 group relative">
+                    <a
+                      href=""
+                      class="capitalize text-sm px-0.5 active:text-black text-white hover:text-sky duration-500 transition-all ease-in-out"
+                      >dropdown 5</a
+                    >
+                  </li>
+                </ul>
+                <!-- Dropdown Ends -->
+              </li>
+              <li class="py-3.5 px-4 mx-0.5 group relative">
+                <a href="" class="capitalize text-sm px-0.5"> contact </a>
+                <span
+                  class="bg-sky w-0 h-0.5 start-0 duration-500 absolute top-full group-hover:w-full"
+                ></span>
+              </li>
+            </ul>
+            <ul class="flex justify-between">
+              <li class="pe-1.5 group">
+                <a href="" class="">
+                  <i
+                    class="fa-brands fa-x-twitter duration-500 group-hover:text-sky"
+                  ></i>
+                </a>
+              </li>
+              <li class="pe-1.5 group">
+                <a href="" class="">
+                  <i
+                    class="fa-brands fa-facebook duration-500 group-hover:text-sky"
+                  ></i>
+                </a>
+              </li>
+              <li class="pe-1.5 group">
+                <a href="" class="">
+                  <i
+                    class="fa-brands fa-instagram duration-500 group-hover:text-sky"
+                  ></i>
+                </a>
+              </li>
+              <li class="pe-1.5 group">
+                <a href="" class="">
+                  <i
+                    class="fa-brands fa-linkedin duration-500 group-hover:text-sky"
+                  ></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Header Ends -->
+
+    <!-- Main Starts -->
+    <main>
+      <!-- Hero Starts -->
+      <section
+        class="hero min-h-screen relative w-full h-screen block object-center bg-cover object-cover"
+        style="background-image: url(./assets/hero-bg-image.png)"
+      >
+        <div
+          class="overlay w-full h-full absolute top-0 start-0 end-0 bottom-0 bg-black/60 z-10"
+        ></div>
+
+        <!-- Content Container - needs relative, z-index higher than overlay, and full height -->
+        <div class="container mx-auto px-4 relative z-20 h-full">
+          <div class="row flex flex-wrap h-full items-center">
+            <!-- For full width on mobile, half on larger screens -->
+            <div class="w-full lg:w-1/2 px-4">
+              <span
+                class="py-2 px-5 bg-sky text-white text-sm font-medium uppercase rounded-full tracking-wider inline-block"
+              >
+                Innovative Solutions
+              </span>
+              <h1
+                class="text-4xl lg:text-6xl font-bold text-white mt-6 font-ubuntu my-6"
+              >
+                Transform Your <br>Business with Modern <br>Technology
+              </h1>
+              <p class="text-white/60 mt-4 text-xl font-inter mb-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud
+              </p>
+              <a href=""
+                class="inline-block mt-6 py-3.5 px-8.5 shadow-sky shadow-xl/40 hover:shadow-2xl/75 capitalize bg-sky text-white rounded-md font-medium hover:bg-sky/80 transition-all duration-300 hover:shadow-sky-500"
+              >
+                explore services
+              </a>
+              <a href=""
+                class="inline-block mt-6 py-3.5 px-8.5 text-lg capitalize text-sky font-medium transform hover:translate-x-1 transition-all duration-300 hover:shadow-sky-500"
+              >
+              <i class="fa-solid fa-circle-play text-xl me-2"></i>
+              <!-- <i class="fa-solid fa-circle-play border-2 border-sky rounded-full text-center bg"></i> -->
+                Watch Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Hero Ends -->
+    </main>
+    <!-- Main Ends -->
+  </body>
+</html>

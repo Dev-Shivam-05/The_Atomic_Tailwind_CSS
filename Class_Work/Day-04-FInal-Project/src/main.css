@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+    /* Font Variables */
+    --font-ubuntu: "Ubuntu", sans-serif;
+    --font-inter: "Inter", sans-serif;
+    --font-roboto: "Roboto", sans-serif;
+
+    /* Default Color Variables */
+    --color-sky: #217FBC;
+    --color-dark: #10192b;
+} 
