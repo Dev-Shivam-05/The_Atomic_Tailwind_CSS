@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./src/main.css" />
+    <!-- Add Poppins Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Apply Poppins font */
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="p-8 bg-gray-50">
+    <!-- Truncate Example -->
+    <div class="w-64 bg-red-100 p-3 mb-6">
+      <p class="truncate font-bold">
+        This is a very long sentence that should be cut off with dots...
+      </p>
+    </div>
+
+    <!-- Vertical Align Example -->
+    <div class="text-2xl mb-6">
+      <span
+        class="align-middle inline-block w-8 h-8 bg-blue-500 rounded"
+      ></span>
+      <span class="align-middle ml-2">Icon and text perfectly centered</span>
+    </div>
+
+    <!-- Tracking + Leading Example -->
+    <div class="mb-6">
+      <h2 class="text-xl font-bold tracking-wider uppercase bg-green-100 p-2">
+        TRACKING-WIDER HEADING
+      </h2>
+      <p class="text-lg leading-relaxed bg-yellow-100 p-3 mt-2">
+        Line 1 — relaxed spacing.<br />
+        Line 2 — easy to read.<br />
+        Line 3 — no eye strain.
+      </p>
+    </div>
+
+    <!-- Arbitrary Weight Example -->
+    <p class="text-2xl font-[550] bg-purple-100 p-3 mb-6">
+      Custom font weight 550 — not bold, not normal.
+    </p>
+
+    <!-- Dynamic Weight Slider -->
+    <input
+      type="range"
+      min="100"
+      max="900"
+      step="100"
+      value="400"
+      class="w-full"
+      id="weight-slider"
+    />
+    <p id="dynamic-text" class="text-4xl mt-4">Adjust my weight!</p>
+    <p id="weight-value" class="text-sm text-gray-500">Current weight: 400</p>
+
+    <div class="bg-blue-500 p-6 text-white">
+      This entire box is painted ocean blue.
+    </div>
+
+    <div class="bg-blue-500 bg-opacity-50 p-6">
+      Semi-transparent blue — you can see shadows behind.
+    </div>
+
+    <div
+      class="bg-linear-to-r from-orange-500 via-pink-500 to-yellow-300 p-6 text-white"
+    >
+      Sunset gradient — left to right.
+    </div>
+
+    <h1
+      class="bg-gradient-to-r from-purple-500 to-pink-500 text-transparent bg-clip-text text-5xl font-bold"
+    >
+      COLORFUL TEXT
+    </h1>
+
+    <!-- Solid Color -->
+    <div class="bg-red-500 p-6 text-white mb-6 rounded-lg">Solid Red Wall</div>
+
+    <!-- Gradient -->
+    <div
+      class="bg-gradient-to-r from-purple-600 via-pink-500 to-red-500 p-6 text-white mb-6 rounded-lg"
+    >
+      Purple → Pink → Red Gradient
+    </div>
+
+    <!-- Opacity -->
+    <div
+      class="bg-blue-500 bg-opacity-30 p-6 mb-6 rounded-lg border border-blue-300"
+    >
+      Transparent Blue — see the border behind?
+    </div>
+
+    <!-- Fixed Background (add image if you have one, else use gradient) -->
+    <div
+      class="bg-gradient-to-b from-green-400 to-blue-500 bg-fixed h-96 flex items-center justify-center text-white text-3xl font-bold mb-6"
+    >
+      Scroll down → background stays fixed!
+    </div>
+
+    <!-- Text Clip -->
+    <h1
+      class="bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 text-transparent bg-clip-text text-6xl font-black text-center"
+    >
+      CLIPPED TEXT
+    </h1>
+
+    <script>
+      const slider = document.getElementById("weight-slider");
+      const text = document.getElementById("dynamic-text");
+      const weightValue = document.getElementById("weight-value");
+
+      slider.oninput = function () {
+        // ✅ Use inline style for dynamic values
+        text.style.fontWeight = this.value;
+        weightValue.textContent = `Current weight: ${this.value}`;
+      };
+    </script>
+  </body>
+</html>
