@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@import "tailwindcss";
+
+@theme {
+  --color-aqua-700: #0ea5e9;
+  --color-aqua-800: #0284c7;
+  --color-surface: #1e293b;
+  --color-background: #0f172a;
+  --color-heading: #f8fafc;
+  --color-default: #94a3b8;
+  --font-ubuntu: "Ubuntu", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+  --font-inter: "Inter", sans-serif;
+}
