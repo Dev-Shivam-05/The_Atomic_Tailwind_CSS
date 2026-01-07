@@ -12,21 +12,19 @@
 
 ## 📑 Table of Contents
 
-- [🔗 Live Demo](#-live-demo)
-- [✨ Key Features](#-key-features)
-- [📱 Responsive Showcase](#-responsive-showcase)
-- [🛠️ Tech Stack & Optimization](#-tech-stack--optimization)
-- [⚡ Tailwind v4 Highlights](#-tailwind-v4-highlights)
-- [📂 Project Structure](#-project-structure)
-- [🚀 Quick Start](#-quick-start)
-- [🎨 Customization](#-customization)
-- [🙋‍♂️ Author](#-author)
+- [� Aventro – Modern Business Consultancy Landing Page](#-aventro--modern-business-consultancy-landing-page)
+  - [📑 Table of Contents](#-table-of-contents)
+  - [🔗 Live Demo](#-live-demo)
+  - [✨ Key Features](#-key-features)
+  - [📱 Responsive Showcase](#-responsive-showcase)
+  - [🛠️ Tech Stack \& Optimization](#️-tech-stack--optimization)
+  - [⚡ Tailwind v4 Highlights](#-tailwind-v4-highlights)
 
 ---
 
 ## 🔗 Live Demo
 
-👉 **[View Live Project on Vercel](https://your-project-link.vercel.app/)** 🚀  
+👉 **[View Live Project on Vercel](https://pr-02-the-atomic-tailwind-css.vercel.app/)** 🚀  
 *(Replace this link with your actual deployment URL)*
 
 ---
