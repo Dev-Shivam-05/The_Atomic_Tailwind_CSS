@@ -12,7 +12,7 @@
 
 ## 📑 Table of Contents
 
-- [� Aventro – Modern Business Consultancy Landing Page](#-aventro--modern-business-consultancy-landing-page)
+- [🚀 Aventro – Modern Business Consultancy Landing Page](#-aventro--modern-business-consultancy-landing-page)
   - [📑 Table of Contents](#-table-of-contents)
   - [🔗 Live Demo](#-live-demo)
   - [✨ Key Features](#-key-features)
